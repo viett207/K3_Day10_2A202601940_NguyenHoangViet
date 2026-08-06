@@ -1,0 +1,57 @@
+{
+  "report_name": "corrupted",
+  "total_rows": 23,
+  "freshness_threshold_days": 180,
+  "stale_rows": 1,
+  "passed": false,
+  "checks": [
+    {
+      "name": "required_columns_present",
+      "passed": true,
+      "value": [],
+      "expected": "no required columns missing"
+    },
+    {
+      "name": "row_count_positive",
+      "passed": true,
+      "value": 23,
+      "expected": "row_count > 0"
+    },
+    {
+      "name": "paper_id_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "paper_id_unique",
+      "passed": false,
+      "value": 1,
+      "expected": "duplicates == 0"
+    },
+    {
+      "name": "title_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "summary_complete",
+      "passed": false,
+      "value": 3,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "text_for_embedding_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "age_days_valid",
+      "passed": true,
+      "value": 0,
+      "expected": "invalid == 0"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "report_name": "baseline",
+  "total_rows": 24,
+  "freshness_threshold_days": 180,
+  "stale_rows": 0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "required_columns_present",
+      "passed": true,
+      "value": [],
+      "expected": "no required columns missing"
+    },
+    {
+      "name": "row_count_positive",
+      "passed": true,
+      "value": 24,
+      "expected": "row_count > 0"
+    },
+    {
+      "name": "paper_id_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "paper_id_unique",
+      "passed": true,
+      "value": 0,
+      "expected": "duplicates == 0"
+    },
+    {
+      "name": "title_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "summary_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "text_for_embedding_complete",
+      "passed": true,
+      "value": 0,
+      "expected": "missing == 0"
+    },
+    {
+      "name": "age_days_valid",
+      "passed": true,
+      "value": 0,
+      "expected": "invalid == 0"
+    }
+  ]
+}
