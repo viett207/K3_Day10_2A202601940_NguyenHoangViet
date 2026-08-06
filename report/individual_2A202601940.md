@@ -28,7 +28,7 @@
 | --- | --- | --- | --- |
 | Chạy baseline và xác minh artifact | data/results/baseline_metrics.json, data/reports/phase1_report.md | Metrics baseline và báo cáo pha 1 được tạo | Đọc file JSON/Markdown và kiểm tra artifact trên disk |
 | Chạy corruption và repair | data/results/corrupted_metrics.json, data/results/repaired_metrics.json, data/results/corruption_log.json | So sánh baseline/corrupted/repaired và log corruption | Đọc các file JSON và báo cáo so sánh |
-| Tạo report cá nhân và báo cáo nhóm | report/individual_report.md, report/group_report.md | Hai file báo cáo được sinh từ dữ liệu thực tế | Chạy python report/individual_report.py và python report/group_report.py |
+| Tạo report cá nhân và báo cáo nhóm | report/individual_report.md, report/group_report.md | Hai file báo cáo được sinh từ dữ liệu thực tế | Chạy python report/group_report.py và python report/individual_report.py |
 
 ## 4. Giải thích phần kỹ thuật đã thực hiện
 
@@ -70,7 +70,7 @@ Tôi đọc các artifact JSON và Markdown đã có trong repo, dùng chúng l�
 | retrieval_hit_rate | 1.0000 | 0.6667 | 1.0000 | Corruption làm giảm đáng kể; repair phục hồi đầy đủ. |
 | mean_token_f1 | 1.0000 | 0.5712 | 1.0000 | Dữ liệu lỗi làm giảm độ khớp token; repair phục hồi. |
 | judge_accuracy | 1.0000 | 0.5556 | 1.0000 | Đánh giá của LLM suy giảm sau corruption. |
-| mean_judge_score | 5 | 3.2222 | 5 | Điểm đánh giá giảm rõ rệt nhưng hồi phục về baseline. |
+| mean_judge_score | 5.0000 | 3.2222 | 5.0000 | Điểm đánh giá giảm rõ rệt nhưng hồi phục về baseline. |
 | Quality checks | PASS | FAIL | PASS | Corrupted fail vì summary completeness và duplicate row. |
 | Freshness status | fresh | fresh | fresh | Freshness không phải nguyên nhân chính trong run này. |
 
@@ -108,4 +108,3 @@ Tôi sẽ thử thêm các corruption scenarios khác như missing title hoặc 
 
 **Họ và tên:** Nguyễn Hoàng Việt
 **Ngày xác nhận:** 2026-08-06
-

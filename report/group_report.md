@@ -17,7 +17,7 @@
 
 ## 2. Tóm tắt kết quả
 
-Nhóm 1 đã hoàn thành toàn bộ chuỗi baseline → corruption → repair cho bài lab data pipeline. Baseline tạo đầy đủ artifact raw, clean, embeddings, evaluation set, metrics, quality/freshness và báo cáo pha 1. Sau khi inject corruption, chất lượng dữ liệu giảm rõ rệt với 2 check fail và metrics agent suy giảm; repair từ raw data đã phục hồi lại đầy đủ các metric về baseline.
+Sau khi chạy lại toàn bộ luồng, nhóm 1 đã hoàn thành đầy đủ baseline, corruption và repair cho bài lab data pipeline. Baseline tạo được các artifact raw, clean, embeddings, evaluation set, metrics, quality/freshness và báo cáo pha 1. Sau khi inject corruption, dữ liệu bị ảnh hưởng ở nhiều mức độ, với quality gate chuyển sang FAIL và các metric của agent giảm rõ rệt; repair từ raw data đã phục hồi lại hầu hết các chỉ số về gần mức baseline.
 
 ## 3. Kiến trúc và luồng dữ liệu
 
@@ -149,5 +149,5 @@ python script/run_corruption_flow.py
 
 ## 11. Kết luận cuối cùng
 
-Nhóm 1 đã hoàn thành bài lab end-to-end, từ ingestion đến reporting. Báo cáo này được xây dựng từ các artifact thực tế trong data/ và cho thấy sai lệch dữ liệu có thể làm suy giảm hiệu quả retrieval/answer của RAG, trong khi repair từ nguồn raw có thể khôi phục lại kết quả gần như ban đầu.
+Nhóm 1 đã hoàn thành bài lab end-to-end, từ ingestion đến reporting, và báo cáo này được xây dựng từ các artifact thực tế vừa tạo lại trong data/. Kết quả cho thấy dữ liệu lỗi có thể làm suy giảm hiệu quả retrieval và answer của RAG, trong khi repair từ nguồn raw có thể khôi phục lại chất lượng gần như ban đầu.
 

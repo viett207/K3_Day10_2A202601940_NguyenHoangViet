@@ -9,7 +9,7 @@
 | `filter` | from-pub-date:2026-02-07,has-abstract:true |
 | `raw_records` | 24 |
 | `clean_records` | 24 |
-| `run_date_utc` | 2026-08-06T10:20:10.383406+00:00 |
+| `run_date_utc` | 2026-08-06T14:31:27.752535+00:00 |
 | `embedding_model` | sentence-transformers/all-MiniLM-L6-v2 |
 | `collection_name` | papers-baseline |
 
